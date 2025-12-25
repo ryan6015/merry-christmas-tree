@@ -7,9 +7,11 @@ import Atmosphere from './components/Atmosphere';
 import GreetingCard from './components/GreetingCard';
 import LoadingScreen from './components/LoadingScreen';
 import { COLORS } from './colors';
+import bgm from './assets/jingle-bells.mp3';
+import Photo from "./assets/photo.jpg";
 
 // Define the greeting card image URL centrally to ensure preloading works correctly
-export const GREETING_IMAGE_URL = "https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&q=80&w=800";
+export const GREETING_IMAGE_URL = Photo;
 
 /**
  * Controller component to handle rotation logic based on the animation timeline.
@@ -111,7 +113,7 @@ const App: React.FC = () => {
         ref={audioRef} 
         loop 
         // Festive, soft, cheerful piano music for Christmas
-        src="https://www.chosic.com/wp-content/uploads/2021/11/Jingle-Bells-3.mp3" 
+        src={bgm} 
       />
 
       {!showCard && !isLoading && (
