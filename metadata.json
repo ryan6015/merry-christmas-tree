@@ -1,0 +1,5 @@
+{
+  "name": "Sparkling Particle Christmas Tree",
+  "description": "A festive React 3D application featuring a particle-based Christmas tree that converges from space, rotates slowly, and includes an interactive greeting card and atmosphere effects.",
+  "requestFramePermissions": []
+}
